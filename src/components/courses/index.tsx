@@ -10,6 +10,7 @@ import CoursesArea from "./CoursesArea";
 const Courses = () => {
 	return (
 		<>
+			<Preloader />
 			<HeaderOne />
 			<BreadcrumbCourses title="All Courses" subtitle="Courses" />
 			<CoursesArea />

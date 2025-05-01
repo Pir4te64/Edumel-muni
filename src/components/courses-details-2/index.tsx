@@ -10,6 +10,7 @@ import CoursesDetailsTwoArea from "./CoursesDetailsTwoArea";
 const CoursesDetailsTwo = () => {
 	return (
 		<>
+			<Preloader />
 			<HeaderOne />
 			<BreadcrumbCoursesDetailsTwo />
 			<CoursesDetailsTwoArea />

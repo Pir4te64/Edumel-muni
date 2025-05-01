@@ -12,6 +12,7 @@ import RelatedCourses from "./RelatedCourses";
 const CoursesDetails = () => {
   return (
     <>
+      <Preloader />
       <HeaderOne />
       <BreadcrumbCoursesDetails />
       <CoursesDetailsArea />

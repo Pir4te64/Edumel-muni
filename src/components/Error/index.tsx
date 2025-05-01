@@ -10,6 +10,7 @@ import Preloader from "../../common/Preloader";
 const NotFound = () => {
     return (
         <>
+            <Preloader />
             <HeaderOne />
             <BreadcrumbEvent title="Error 404" subtitle="Error 404" />
 

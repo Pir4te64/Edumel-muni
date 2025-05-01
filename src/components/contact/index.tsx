@@ -13,6 +13,7 @@ import MapArea from "./MapArea";
 const Contact = () => {
 	return (
 		<>
+			<Preloader />
 			<HeaderOne />
 			<BreadcrumbEvent title="Contact" subtitle="Contact" />
 			<ContactArea />

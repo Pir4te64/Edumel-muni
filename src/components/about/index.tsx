@@ -17,6 +17,7 @@ import FeatureArea from "./FeatureArea";
 const About = () => {
 	return (
 		<>
+			<Preloader />
 			<HeaderOne />
 			<BreadcrumbEvent title="About" subtitle="About" />
 			<AboutArea />

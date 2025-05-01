@@ -11,6 +11,7 @@ import EventLisrArea from "./EventLisrArea";
 const Event = () => {
   return (
     <>
+      <Preloader />
       <HeaderOne />
       <BreadcrumbEvent title="Event List" subtitle="Event List" />
       <EventLisrArea />

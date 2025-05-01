@@ -10,6 +10,7 @@ import CoursesGridArea from "./CoursesGridArea";
 const CoursesGrid = () => {
   return (
     <>
+      <Preloader />
       <HeaderOne />
       <BreadcrumbCourses title="Courses - Grid Style" subtitle="Courses Grid" />
       <CoursesGridArea />

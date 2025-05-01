@@ -10,6 +10,7 @@ import CheckoutArea from "./CheckoutArea";
 const Checkout = () => {
   return (
     <>
+      <Preloader />
       <HeaderOne />
       <BreadcrumbShop title="Checkout" subtitle="Checkout" />
       <CheckoutArea />
