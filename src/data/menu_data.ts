@@ -65,7 +65,7 @@ const menu_data: DataType[] = [
 			{ link: "/courses-details-2", title: "Courses Details 02" },
 		],
 	},
-	{
+	/* {
 		id: 3,
 		title: "Eventos",
 		link: "#",
@@ -82,6 +82,6 @@ const menu_data: DataType[] = [
 		link: "/contact",
 		icon: "fas fa-phone-rotary",
 		has_dropdown: false,
-	},
+	}, */
 ];
 export default menu_data;

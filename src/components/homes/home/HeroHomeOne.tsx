@@ -1,9 +1,21 @@
 import { Link } from "react-router-dom";
 import Count from "../../../common/Count";
-
+import img1 from "/assets/img/hero/img1.png";
+import img2 from "/assets/img/hero/img2.png";
+import img3 from "/assets/img/hero/img3.png";
+import img4 from "/assets/img/hero/img4.png";
+import { useEffect, useState } from "react";
 
 
 const HeroHomeOne = () => {
+    const images = [img1, img2, img3, img4];
+    const [currentIndex, setCurrentIndex] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex(prev => (prev + 1) % images.length);
+        }, 3500); // cámbialo a 3000 para 3s, 4000 para 4s...
+        return () => clearInterval(interval);
+    }, [images.length]);
     return (
         <>
             <section className="hero-section hero-1 fix">
@@ -42,30 +54,19 @@ const HeroHomeOne = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hero-image">
-                            <img src="assets/img/hero/img1.png" alt="img" className="img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
+                        <div className="hero-image position-relative">
+                            <img
+                                src={images[currentIndex]}
+                                alt="img"
+                                className="img-custom-anim-left"
+                                data-wow-duration="1.5s"
+                                data-wow-delay="0.3s"
+                            />
                             <div className="counter-box float-bob-x">
-                                <p>More then</p>
                                 <h2><span className="odometer" data-count="2800">
                                     <Count number={2800} text='+' />
                                 </span></h2>
-                                <p>Quality Courses</p>
-                            </div>
-                            <div className="rating-box float-bob-y">
-                                <div className="content">
-                                    <h2><span className="odometer" data-count="4.8">
-                                        <Count number={4} text=".8k" />
-                                    </span></h2>
-                                    <p>5820+ Reviews</p>
-                                    <div className="star">
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                        <i className="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <img src="assets/img/hero/trustpilot-logopng.png" alt="img" />
+                                <p>Cursos de Calidad</p>
                             </div>
                             <div className="circle-img float-bob-y">
                                 <img src="assets/img/hero/circle.png" alt="img" />

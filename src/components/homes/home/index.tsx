@@ -1,4 +1,5 @@
 import MarqueeOne from "../../../common/MarqueeOne";
+import Preloader from "../../../common/Preloader";
 import ScrollTop from "../../../common/ScrollTop";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import HeaderOne from "../../../layouts/headers/HeaderOne";
@@ -22,6 +23,7 @@ const HomeOne = () => {
 
 	return (
 		<>
+			<Preloader />
 			<HeaderOne />
 			<HeroHomeOne />
 			<FeatureHomeOne />
