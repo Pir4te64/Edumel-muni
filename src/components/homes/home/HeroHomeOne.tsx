@@ -43,7 +43,7 @@ const HeroHomeOne = () => {
                             </div>
                         </div>
                         <div className="hero-image">
-                            <img src="assets/img/hero/hero-1.jpg" alt="img" className="img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
+                            <img src="assets/img/hero/img1.png" alt="img" className="img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
                             <div className="counter-box float-bob-x">
                                 <p>More then</p>
                                 <h2><span className="odometer" data-count="2800">
